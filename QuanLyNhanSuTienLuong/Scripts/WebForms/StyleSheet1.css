@@ -1,0 +1,287 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+}
+/*RESET CSS*/
+html, body, .wraper, .slide, ul, li, .motslide {
+    width: 100%;
+    height: 100%;
+}
+
+div.silde ul {
+    position: relative;
+}
+
+div.slide ul li.b {
+    position: absolute;
+    top: 0px;
+}
+
+div.slide ul li.c {
+    position: absolute;
+    top: 0px;
+}
+
+div.motslide {
+    position: absolute;
+    top: 0;
+}
+
+.motslide {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.tamgiac1 {
+    z-index: 555;
+    position: absolute;
+    top: -400px;
+}
+
+img.tamgiac2 {
+    z-index: 556;
+    position: absolute;
+    right: 40px;
+    top: -300px;
+}
+
+img.tamgiactren {
+    position: absolute;
+    top: 0px;
+    right: -200px;
+    z-index: 557;
+}
+
+.text {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    color: white;
+    z-index: 1000;
+    width: 360px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+hr {
+    border: 1px solid white;
+    width: 60px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+p {
+    font-weight: lighter;
+    margin: 30px 50px 0px 0px;
+    font-size: 12px;
+}
+
+button {
+    border: 2px solid white;
+    background-color: #0000ff00;
+    padding: 5px 40px;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+/*END STYLE SLIDE 1*/
+
+
+.slide_2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide3_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+.slide_3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide4_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+div.slide ul li {
+    opacity: 0;
+}
+
+    div.slide ul li.a {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    div.slide ul li.b {
+        transition: 1s;
+        z-index: 2;
+    }
+
+    div.slide ul li.c {
+        transition: 1s;
+        z-index: 3;
+    }
+/*AN SLIDE 2 VA 3*/
+div.wraper {
+    position: relative;
+}
+
+div.nut {
+    position: absolute;
+    bottom: 20px;
+    z-index: 99999999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    div.nut ul li {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: 2px solid white;
+        border-radius: 100%;
+        z-index: 99999999;
+        transition-delay: 0.3s;
+    }
+
+        div.nut ul li:hover {
+            background-color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+div.slide ul li.hienra {
+    opacity: 1;
+    transform: 1s;
+}
+/*XONG CHUYEN SLIDE*/
+div.slide ul li div.motslide .tamgiac1 {
+    opacity: 0;
+}
+
+div.slide ul li.hienra div.motslide .tamgiac1 {
+    animation: tamgiacdautien 0.8s forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes tamgiacdautien {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.slide ul li div.motslide .tamgiac2 {
+    opacity: 0;
+}
+
+div.slide ul li.hienra div.motslide .tamgiac2 {
+    animation: tamgiacthuhai 1s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes tamgiacthuhai {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.slide ul li div.motslide .tamgiactren {
+    opacity: 0;
+}
+
+div.slide ul li.hienra div.motslide .tamgiactren {
+    animation: tamgiactren 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes tamgiactren {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.slide ul li div.motslide .text h2,
+div.slide ul li div.motslide .text h4,
+div.slide ul li div.motslide .text hr,
+div.slide ul li div.motslide .text p,
+div.slide ul li div.motslide .text button {
+    opacity: 0;
+}
+
+div.slide ul li.hienra div.motslide .text h2,
+div.slide ul li.hienra div.motslide .text h4,
+div.slide ul li.hienra div.motslide .text hr,
+div.slide ul li.hienra div.motslide .text p,
+div.slide ul li.hienra div.motslide .text button {
+    animation: texthienra 1s forwards;
+}
+
+@-webkit-keyframes texthienra {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+div.slide ul li.hienra div.motslide .text h4 {
+    animation-delay: 0.3s;
+}
+
+div.slide ul li.hienra div.motslide .text hr {
+    animation-delay: 0.5s;
+}
+
+div.slide ul li.hienra div.motslide .text p {
+    animation-delay: 0.7s;
+}
+
+div.slide ul li.hienra div.motslide .text button {
+    animation-delay: 1s;
+}
